@@ -1,0 +1,21 @@
+{
+  "name": "landscape-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap4-jade": "^1.0.0-dev",
+    "express": "^4.15.4",
+    "express-compile-sass": "^3.0.4",
+    "express-google-analytics": "^1.0.2",
+    "jade": "^1.11.0",
+    "node-sass": "^4.5.3",
+    "nodemailer": "^4.1.2"
+  },
+  "devDependencies": {}
+}
