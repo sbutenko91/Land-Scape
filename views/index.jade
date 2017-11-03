@@ -1,4 +1,160 @@
-extends ./layout
+extends ./shared/layout
 
-block content  
-  h1 CONTENT
+block content      
+    
+    section.cmp-slider
+      .section-slider.container-fluid#slider
+          div(id="carouselExampleIndicators" class="carousel slide" data-ride="carousel")
+            ol(class="carousel-indicators")
+              li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+              li(data-target="#carouselExampleIndicators" data-slide-to="1")
+              li(data-target="#carouselExampleIndicators" data-slide-to="2")
+              li(data-target="#carouselExampleIndicators" data-slide-to="3")
+              li(data-target="#carouselExampleIndicators" data-slide-to="4")
+              li(data-target="#carouselExampleIndicators" data-slide-to="5")
+            div(class="carousel-inner" role="listbox")
+              div(class="carousel-item slider1 active")
+                .carousel-caption
+                  h3.subject Проектування
+                  p.description Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер.
+              div(class="carousel-item slider2")
+                .carousel-caption
+                  h3.subject Квітники
+                  p.description Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер.
+              div(class="carousel-item slider3")
+                .carousel-caption
+                  h3.subject Квітники
+                  p.description Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер.
+              div(class="carousel-item slider4")
+                .carousel-caption
+                  h3.subject Сади
+                  p.description Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер.
+              div(class="carousel-item slider5")
+                .carousel-caption
+                  h3.subject Тераси
+                  p.description Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер.
+              div(class="carousel-item slider6")
+                .carousel-caption
+                  h3.subject Системи поливу
+                  p.description Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер.
+            a(class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev")
+              span(class="carousel-control-prev-icon" aria-hidden="true")
+              span(class="sr-only") Previous
+            a(class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next")
+              span(class="carousel-control-next-icon" aria-hidden="true")
+              span(class="sr-only") Next
+    section.cmp-services
+      .section-services.section-wrapper.container#services
+        .row
+          .col-12
+            h3.text-center.title Послуги
+            p.text-center.subtext There are many variations of passages of Lorem Ipsum avtailable, but the majority have suffered alteration in some form.
+        .row
+          .col-12.col-md-4.service-col
+            .serviceImg.img-1
+            .text-center.item Проектування
+            .text-default Першим етапом ландшафтного благоустрою і озеленення земельної ділянки є розробка проекту. Ландшафтне проектування є не менш складним і важливим завданням, ніж розробка дизайну інтер'єру. 
+          .col-12.col-md-4.service-col
+            .serviceImg.img-2
+            .text-center.item Квітники
+            .text-default Перетворити банальний ділянку площею 6 соток в гармонійний куточок для відпочинку – це головне завдання ландшафтного дизайну. В ідеалі сад повинен бути зручний для роботи і відпочинку на свіжому повітрі. 
+          .col-12.col-md-4.service-col
+            .serviceImg.img-3
+            .text-center.item Сади
+            .text-default Садом вважається частина земельної ділянки, зайнята плодовими насадженнями. Інші зелені насадження, у тому числі газони, квітники, декоративні кущі та дерева, садом не вважаються. 
+          .col-12.col-md-4.offset-md-2.service-col
+            .serviceImg.img-4
+            .text-center.item Тераси
+            .text-default Якщо ваша ділянка знаходиться на схилі, то цілком доречно задуматися про те, щоб зробити його терасування. Це не тільки додасть привабливий вид ландшафту і дозволить прикрасити ділянку підпірними стінками.
+          .col-12.col-md-4.service-col
+            .serviceImg.img-5
+            .text-center.item Системи поливу
+            .text-default Грамотно облаштована система автоматичного поливу ділянки позбавить Вас від витрати часу на ручний полив рослин. Зелений газон і доглянуті квітники є прикрасою будь-якого господаря.
+    section.cmp-aboutus
+      .section-aboutus.section-wrapper.container#aboutus
+        .row
+          .col-12
+            h3.text-center.title Чому ми?
+            p.text-center.subtext There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. 
+        .row
+          .col-12.col-sm-6.col-md-3.counter
+            .projects
+              .count 67
+              .icon-flower
+            .item Виконаних проектів
+          .col-12.col-sm-6.col-md-3.counter
+            .experience
+              .count 5
+              .icon-calendar
+            .item Років на ринку
+          .col-12.col-sm-6.col-md-3.counter
+            .clients
+              .count 50
+              .icon-smile
+            .item Задоволених клієнтів
+          .col-12.col-sm-6.col-md-3.counter
+            .space
+              .count 983
+              .icon-tree
+            .item 
+              |м
+              sup 2
+              |  території оброблено
+    section.cmp-portfolio
+      .section-portfolio.section-wrapper.container#portfolio
+        .row
+          .col-12
+            h3.text-center.title Портфоліо
+            p.text-center.subtext There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. 
+        #instafeed.row.gallery.wrapper-portfolio
+
+    section.cmp-reviews
+      .section-reviews.section-wrapper.container-fluid#reviews
+        .row
+          .col-12
+            h3.text-center.title Відгуки
+            p.text-center.subtext Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+        .row
+          .col-12
+            .carousel-wrapper
+              #carousel
+                .item
+                  a(href="#" id="prev")
+                  a(href="#" id="next")
+                  img(src="/images/review1.jpg" class="img-fluid" id="item-1.jpg")
+                  img(src="/images/review2.jpg" class="img-fluid" id="item-2.jpg")
+                  img(src="/images/review3.jpg" class="img-fluid" id="item-3.jpg")
+            
+    section.cmp-articles
+      .section-articles.section-wrapper.container#articles
+        .row
+          .col-12
+            h3.text-center.title Статі
+            p.text-center.subtext Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+        .row
+          .col-12.col-md-6.item
+            .content
+              .img.article1
+              .articleName Благоустрій садової ділянки
+              .demo Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому.
+          .col-12.col-md-6.item
+            .content
+              .img.article2
+              .articleName Ландшафтний дизайн садової ділянки 
+              .demo Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому.
+          .col-12.col-md-4.item
+            .content
+              .img.article3
+              .articleName Ландшафтний дизайн клумб на ділянці 
+              .demo Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому.
+          .col-12.col-md-4.item
+            .content
+              .img.article4
+              .articleName Ландшафтний дизайн квітника
+              .demo Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому. 
+          .col-12.col-md-4.item
+            .content
+              .img.article5
+              .articleName Ландшафтний дизайн фотогаларея
+              .demo Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому.
+    

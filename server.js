@@ -3,19 +3,26 @@ var express = require('express'),
     compileSass = require('express-compile-sass'),
     path = require("path"),
     root = process.cwd();
+    port = process.env.PORT || 8088;
 
-var expressGoogleAnalytics = require('express-google-analytics');
 var mailService = require('./services/email.service');
 var bodyParser = require('body-parser')
+var jsonParser = bodyParser.json()
+var request = require('request');
 
 app.use(bodyParser.json());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function (req, res) {
-    res.render('index');
+    res.render('/homepage/index');
 });
 
+
+app.post('/mail', function (req, res) {   
+    mailService.sendEmail(req.body);
+    res.status(200).send('OK');
+});
 app.use(compileSass({
     root: root + '/public',
     sourceMap: true, // Includes Base64 encoded source maps in output css 

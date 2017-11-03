@@ -1,0 +1,36 @@
+doctype html  
+html  
+  head
+    block vars
+    head
+      meta(http-equiv="Content-Type", content="text/html; charset=UTF-8")
+      meta(name='robots', content='index, follow')
+      meta(name='keywords', content='#{keywords}')
+      meta(name='description', content='#{description}')
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      meta(http-equiv="x-ua-compatible" content="ie=edge")
+      title #{title}
+      link(rel='shortcut icon', type='image/ico', href='/icon/Mag1cwind0w-O-Sunny-Day-Osd-favorites.ico')
+      link(href='https://fonts.google.com/specimen/PT+Sans')
+      link(rel='stylesheet', href='/styles/variables.scss')
+      link(rel='stylesheet', href='/styles/fonts.scss')
+      link(rel='stylesheet', href='/styles/landing.scss')
+      link(rel='stylesheet', href='/styles/magnific.css')
+      link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous")    
+  body
+    include header
+    #content
+      block content
+    include footer
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous")
+    script(src="/js/headerNavigation.js")
+    script(src="/js/instafeed.min.js")
+    script(src="/js/magnific.min.js")
+    script(src="/js/instaimages.js")
+    script(src="/js/jquery.waterwheelCarousel.js")
+    script(src="/js/carousel.js")
+    script(src="/js/maskedinput.js")
+ 
+    

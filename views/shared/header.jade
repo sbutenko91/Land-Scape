@@ -1,0 +1,83 @@
+div(class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true")
+    div(class="modal-dialog" role="document")
+        div.modal-content
+            div.modal-header
+                div(class="modal-title" id="exampleModalLongTitle") Форма зворотнього зв'язку
+                button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                    .icon-close-form(aria-hidden="true")
+            .content.container-fluid
+                form#contact-form
+                    .row
+                        .col-12
+                            .form-group
+                                label(for="name") Прізвище та ім'я
+                                input.form-control#name(type="text", aria-describedby="name", placeholder="введіть прізвище та ім'я", required)
+                        .col-12.col-sm-6
+                            .form-group
+                                label(for="email") Email
+                                input.form-control#email(type="email", aria-describedby="email", placeholder="введіть email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+                        .col-12.col-sm-6
+                            .form-group
+                                label(for="phoneNumber") Телефон
+                                input.form-control#phoneNumber(name="phone-number" type="text" maxlength="14" placeholder="(0XX) XXX-XXXX", required)
+                        .col-12
+                            .form-group.message-field
+                                label(for="message") Повідомлення
+                                textarea.form-control#message(rows="4", maxlength="1000")
+                        button.btn.btn-primary.sent#btnsend(type="submit")
+                            .iconMessage
+                            .button-name Замовити послугу
+
+section#header-section
+    .container-fluid.section-header
+        .row.top
+            .col-xs-12.col-sm-4.col-lg-3.company
+                a.company-info
+                    .logo
+                    .name-wrapper
+                        .name назва компанії
+                        .subname ландшафтний дизайн
+            .col-xs-12.col-sm-4.col-lg-3.social
+                .social-wrapper
+                    .social-icon.youtube
+                    .social-icon.facebook
+                    .social-icon.instagram
+            .col-xs-12.col-sm-4.col-lg-3.contact
+                .phone-wrapper
+                    .phone-icon
+                    .phoneNumber +38 (096) 554-98-98
+            .col-xs-12.col-sm-4.col-lg-3.ordering
+                .ordering-wrapper
+                    button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong")
+                        .iconMessage
+                        .button-name Замовити послугу
+    nav.navbar.navbar-toggleable-md.navbar-light.bg-faded(id="navbar")
+        button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation", onclick="toggleHeaderNavBar()")
+            span.navbar-toggler-icon
+        a.navbar-brand.logoScroll.company-info.mobileLogo(onclick="hideCollapseMenu()")
+            .logo
+            .name-wrapper
+                .name назва компанії
+                .subname ландшафтний дизайн
+        .collapse.navbar-collapse#navbarSupportedContent
+            ul.navbar-nav.mr-auto#menu
+                li.nav-item.active#menu1
+                    a.nav-link(href="#slider", onclick="hideCollapseMenu()") головна
+                li.nav-item#menu2
+                    a.nav-link(href="#services", onclick="hideCollapseMenu()") послуги
+                        .line
+                li.nav-item#menu3
+                    a.nav-link(href="#aboutus", onclick="hideCollapseMenu()") чому ми?
+                        .line
+                li.nav-item#menu4
+                    a.nav-link(href="#portfolio", onclick="hideCollapseMenu()") портфоліо
+                        .line
+                li.nav-item#menu5
+                    a.nav-link(href="#reviews", onclick="hideCollapseMenu()") відгуки
+                        .line
+                li.nav-item#menu6
+                    a.nav-link(href="#articles", onclick="hideCollapseMenu()") статті
+                        .line
+                li.nav-item#menu7
+                    a.nav-link(href="#footer-section", onclick="hideCollapseMenu()") контакти
+                        .line
