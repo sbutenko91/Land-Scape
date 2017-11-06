@@ -17,6 +17,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', function (req, res) {
     res.render('index');
 });
+app.get('/article1', function (req, res) {
+    res.render('article');
+});
 
 
 app.post('/mail', function (req, res) {   
